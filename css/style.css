@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 :root {
     --primary: #0B0B0D;
     --secondary: #1A1A1F;
@@ -11,13 +13,14 @@ body {
     color: var(--text-light);
     line-height: 1.5;
     background-color: var(--primary);
+    font-family: "Ubuntu", sans-serif;
 }
 
 video {
     width: 100%;
 }
 
-/********** Template CSS **********/
+
 
 .back-to-top {
     position: fixed;
@@ -27,22 +30,31 @@ video {
     z-index: 99;
 }
 
-
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
+header {
+    position: relative;
 }
 
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
+header::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
 }
 
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
+.bg-dark {
+    background-color: var(--primary) !important;
+}
 
 /* CSS */
 .button-78 {
@@ -73,8 +85,8 @@ video {
     text-align: center;
     text-decoration: none;
     text-transform: none;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
     width: auto;
@@ -234,41 +246,6 @@ video {
 
 
 /*** Header ***/
-.carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 100px;
-    background: rgba(0, 0, 0, .7);
-    z-index: 1;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 10%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
-}
-
-@media (max-width: 768px) {
-    #header-carousel .carousel-item {
-        position: relative;
-        min-height: 550px;
-    }
-
-    #header-carousel .carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
 .page-header {
     padding-top: 200px;
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-1.jpg) top center no-repeat;
@@ -366,12 +343,18 @@ video {
 
 .service-item.service-item-left {
     border-radius: 500px 0 0 500px;
-    background: linear-gradient(to right, var(--bs-secondary), var(--bs-dark));
+    background: linear-gradient(to right, var(--secondary), var(--primary));
 }
 
 .service-item.service-item-right {
     border-radius: 0 500px 500px 0;
-    background: linear-gradient(to left, var(--bs-secondary), var(--bs-dark));
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.service-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
 @media (max-width: 767.98px) {
@@ -379,7 +362,7 @@ video {
     .service-item.service-item-left,
     .service-item.service-item-right {
         border-radius: 500px 500px 0 0;
-        background: linear-gradient(to bottom, var(--bs-secondary), var(--bs-dark));
+        background: linear-gradient(to bottom, var(--secondary), var(--primary));
         text-align: center;
     }
 }
@@ -492,7 +475,7 @@ video {
 
 
 /*** Footer ***/
-@keyframes footerAnimatedBg {
+/* @keyframes footerAnimatedBg {
     0% {
         background-position: 0 0;
     }
@@ -503,8 +486,9 @@ video {
 }
 
 .footer {
-    background-image: url(../img/footer-bg.png);
-    background-position: 0px 0px;
+    background-image: url(../img/footer1.png);
+    background-position: center center;
     background-repeat: repeat-x;
+    background-size: cover;
     animation: footerAnimatedBg 50s linear infinite;
-}
+} */
