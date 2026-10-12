@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#050505">
+    <title>Our Work | ES Auto Expert</title>
+    <meta name="description" content="View recent auto repair, upgrades, and detailing work by ES Auto Expert in Fair Lawn, NJ.">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,600;1,700;1,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a class="nav__brand" href="index.html" aria-label="ES Auto Expert home"><img src="img/logo-mark.png" alt="ES Auto Expert" width="156" height="52"></a>
+            <nav class="nav__links" id="menu" aria-label="Main">
+                <a class="nav__link" href="index.html#home" data-nav="home">Home</a>
+                <a class="nav__link" href="index.html#service" data-nav="service">Services</a>
+                <a class="nav__link" href="index.html#about" data-nav="about">About</a>
+                <a class="nav__link is-active" href="ourwork.html" data-nav="work">Our work</a>
+                <a class="nav__link" href="index.html#contact" data-nav="contact">Contact</a>
+                <a class="btn btn--sm" href="tel:+12013009101"><i class="fa-solid fa-phone" aria-hidden="true"></i>201-300-9101</a>
+            </nav>
+            <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+        </div>
+        <div class="nav__progress" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="wrap">
+                <div class="speed" aria-hidden="true"><i></i><i></i><i></i></div>
+                <h1 class="page-title">Recent projects</h1>
+                <p class="lede">Brakes, engines, electrical, diagnostics and restorations from our Fair Lawn shop. Tap any photo to enlarge it.</p>
+            </div>
+        </section>
+
+        <section class="section" aria-label="Project gallery" style="padding-top:clamp(2.5rem,5vw,4rem)">
+            <div class="wrap">
+                <div class="filters" role="group" aria-label="Filter projects">
+                    <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="chip" type="button" data-filter="brakes" aria-pressed="false">Brakes</button>
+                    <button class="chip" type="button" data-filter="engine" aria-pressed="false">Engine</button>
+                    <button class="chip" type="button" data-filter="electrical" aria-pressed="false">Electrical and diagnostics</button>
+                    <button class="chip" type="button" data-filter="looks" aria-pressed="false">Looks and restoration</button>
+                </div>
+                <p class="count" id="count" role="status" aria-live="polite"></p>
+                <ul class="gallery" id="gallery">
+                <li class="gallery__item" data-cat="brakes"><button class="gallery__btn" type="button" aria-label="Open photo: Brake rotor and caliper before and after service with new ceramic pads"><img src="img/img1.jpeg" alt="Brake rotor and caliper before and after service with new ceramic pads" width="1206" height="1204" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="looks"><button class="gallery__btn" type="button" aria-label="Open photo: Headlight before and after restoration"><img src="img/img2.jpeg" alt="Headlight before and after restoration" width="1206" height="1063" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="engine"><button class="gallery__btn" type="button" aria-label="Open photo: Front of a car with the bumper removed during repair"><img src="img/img3.jpeg" alt="Front of a car with the bumper removed during repair" width="1206" height="892" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="engine"><button class="gallery__btn" type="button" aria-label="Open photo: White sedan with the hood open during service"><img src="img/img4.jpeg" alt="White sedan with the hood open during service" width="1206" height="669" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="brakes looks"><button class="gallery__btn" type="button" aria-label="Open photo: Front brake rotor with a freshly painted yellow-green caliper"><img src="img/img5.jpeg" alt="Front brake rotor with a freshly painted yellow-green caliper" width="1206" height="1676" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="engine"><button class="gallery__btn" type="button" aria-label="Open photo: Engine bay with fluids and filters laid out for maintenance"><img src="img/img6.jpeg" alt="Engine bay with fluids and filters laid out for maintenance" width="1206" height="679" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="looks"><button class="gallery__btn" type="button" aria-label="Open photo: Interior seats and dashboard detail"><img src="img/img7.jpeg" alt="Interior seats and dashboard detail" width="1206" height="1219" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="engine"><button class="gallery__btn" type="button" aria-label="Open photo: Engine intake components being serviced"><img src="img/img8.jpeg" alt="Engine intake components being serviced" width="1206" height="1216" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="engine"><button class="gallery__btn" type="button" aria-label="Open photo: Cylinder head with the valve cover removed"><img src="img/img9.jpeg" alt="Cylinder head with the valve cover removed" width="1206" height="1836" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="brakes"><button class="gallery__btn" type="button" aria-label="Open photo: New drilled brake rotor next to a worn rotor"><img src="img/img10.jpeg" alt="New drilled brake rotor next to a worn rotor" width="1206" height="898" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="electrical"><button class="gallery__btn" type="button" aria-label="Open photo: Car battery compartment during electrical service"><img src="img/img11.jpeg" alt="Car battery compartment during electrical service" width="1206" height="1609" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="engine"><button class="gallery__btn" type="button" aria-label="Open photo: Engine with timing components exposed"><img src="img/img12.jpeg" alt="Engine with timing components exposed" width="1206" height="1589" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="electrical"><button class="gallery__btn" type="button" aria-label="Open photo: Technician testing a car battery with a handheld tester"><img src="img/img13.jpeg" alt="Technician testing a car battery with a handheld tester" width="1206" height="1910" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="engine"><button class="gallery__btn" type="button" aria-label="Open photo: Mercedes-Benz engine bay with fresh synthetic oil"><img src="img/img14.jpeg" alt="Mercedes-Benz engine bay with fresh synthetic oil" width="1206" height="1910" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="engine"><button class="gallery__btn" type="button" aria-label="Open photo: White Audi with the hood open and engine detail shots"><img src="img/img16.jpeg" alt="White Audi with the hood open and engine detail shots" width="1206" height="1204" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="engine"><button class="gallery__btn" type="button" aria-label="Open photo: Dark sedan serviced in a driveway with engine detail shots"><img src="img/img17.jpeg" alt="Dark sedan serviced in a driveway with engine detail shots" width="1206" height="1211" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="electrical"><button class="gallery__btn" type="button" aria-label="Open photo: Diagnostic tablet connected inside a Toyota Prius"><img src="img/img18.jpeg" alt="Diagnostic tablet connected inside a Toyota Prius" width="1206" height="696" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="brakes"><button class="gallery__btn" type="button" aria-label="Open photo: White Tesla with brake service photos"><img src="img/img19.jpeg" alt="White Tesla with brake service photos" width="1206" height="1206" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="engine brakes"><button class="gallery__btn" type="button" aria-label="Open photo: Grey coupe with the hood open and engine bay shots"><img src="img/img20.jpeg" alt="Grey coupe with the hood open and engine bay shots" width="1206" height="1204" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="brakes"><button class="gallery__btn" type="button" aria-label="Open photo: Silver minivan with brake rotor service photos"><img src="img/img21.jpeg" alt="Silver minivan with brake rotor service photos" width="1206" height="1197" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="brakes"><button class="gallery__btn" type="button" aria-label="Open photo: Dark SUV with brake service photos"><img src="img/img22.jpeg" alt="Dark SUV with brake service photos" width="1206" height="1198" loading="lazy"></button></li>
+                <li class="gallery__item" data-cat="brakes"><button class="gallery__btn" type="button" aria-label="Open photo: Blue sedan with new brake rotors"><img src="img/img23.jpeg" alt="Blue sedan with new brake rotors" width="1206" height="1195" loading="lazy"></button></li>
+                </ul>
+                <div style="margin-top:3rem"><a class="btn" href="tel:+12013009101"><i class="fa-solid fa-phone" aria-hidden="true"></i>Book your repair: 201-300-9101</a></div>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+        <img id="lb-img" src="" alt="">
+        <p class="lightbox__caption" id="lb-cap"></p>
+        <button class="lightbox__close" type="button" aria-label="Close photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        <button class="lightbox__prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="lightbox__next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </dialog>
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer__grid">
+                <a class="footer__logo" href="index.html" aria-label="ES Auto Expert home"><img src="img/logo-full.png" alt="ES Auto Expert. Diagnostics, repairs, maintenance. Fair Lawn, NJ." width="300" height="142" loading="lazy"></a>
+                <nav class="footer__nav" aria-label="Footer">
+                    <a href="index.html#service">Services</a>
+                    <a href="index.html#about">About</a>
+                    <a href="ourwork.html">Our work</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+                <div class="social">
+                    <a href="https://www.instagram.com/es_auto_expert/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="ES Auto Expert on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/people/ES-AUTO-Expert/61580007063078/?mibextid=wwXIfr&amp;rdid=HpfyMtVuzKhnbJVK&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CxApa1gKo%2F%3Fmibextid%3DwwXIfr" target="_blank" rel="noopener noreferrer" aria-label="ES Auto Expert on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://www.tiktok.com/@esautoexpert?_r=1&amp;_t=ZP-95vpnaN8sBj" target="_blank" rel="noopener noreferrer" aria-label="ES Auto Expert on TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <p class="footer__legal">&copy; <span data-year>2026</span> ES Auto Expert. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="dock">
+        <a class="btn" href="tel:+12013009101"><i class="fa-solid fa-phone" aria-hidden="true"></i>Call now</a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
