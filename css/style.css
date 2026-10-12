@@ -199,6 +199,7 @@ dd {
     inset: 0 0 auto 0;
     z-index: 100;
     height: var(--nav-h);
+    background: rgba(5, 5, 5, .82);
     border-bottom: 1px solid transparent;
     transition: background .3s, border-color .3s, backdrop-filter .3s;
 }
@@ -218,7 +219,6 @@ dd {
     height: 100%;
     width: min(100% - 2rem, var(--wrap));
     margin-inline: auto;
-    background: rgba(5, 5, 5, .82);
 }
 
 .nav__brand img {
